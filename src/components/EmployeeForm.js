@@ -17,7 +17,7 @@ class EmployeeForm extends Component {
                     <Input
                         label="Name"
                         placeholder="Jane"
-                        value={this.props.name.value}
+                        value={this.props.name}
                         onChangeText={value => this.props.employeeUpdate({ prop: 'name', value })}
                     />
                 </CardSection>
@@ -26,7 +26,7 @@ class EmployeeForm extends Component {
                     <Input
                         label="Phone"
                         placeholder="555-555-555"
-                        value={this.props.phone.value}
+                        value={this.props.phone}
                         onChangeText={value => this.props.employeeUpdate({ prop: 'phone', value })}
                     />
                 </CardSection>
